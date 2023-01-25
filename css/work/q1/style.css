@@ -1,0 +1,52 @@
+@charset "UTF-8";
+
+/* 1−1 float */
+.float_left {
+  width: 400px;
+  float: left;
+}
+.float_right {
+  width: 400px;
+  float: right;
+}
+.clearfix::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+/* 1-2 inline-block */
+.font_zero {
+  font-size: 0;
+}
+.inline_block {
+  display: inline-block;
+  width: 400px;
+}
+.margin_left {
+  margin-left: 60px;
+}
+
+/* 1-3 inline-calc */
+.inline_calc {
+  display: inline-block;
+  width: calc((100% - 50px) / 3);
+  margin-left: 25px;
+}
+.inline_calc:first-child {
+  margin-left: 0;
+}
+
+/* 1-4 flex */
+.flex_box {
+  display: flex;
+  justify-content: space-between;
+}
+.flex_width {
+  width: 400px;
+}
+
+/* q1が終わったら
+q2のcssはq2フォルダの中のcssファイルに記述してください
+※ sample-〇〇は既存クラスのためスタイルを変更しないでください
+その際、新しく作るクラス名はsample-〇〇にする必要はありません */

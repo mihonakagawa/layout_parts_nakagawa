@@ -1,0 +1,61 @@
+@charset "UTF-8";
+
+.hanabi {
+  position: relative;
+}
+
+.hanabi::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  width: 300px;
+  height: 200px;
+  background-color: #fd951e;
+  /* z-index: 10; */
+}
+
+.firewark_img {
+  display: block;
+  margin: 0 auto;
+}
+
+.firewark_text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  color: #fff;
+  font-size: 50px;
+}
+
+#scroll_top::after {
+  content: '';
+  position: fixed;
+  border-top: solid 2px #051181;
+  border-right: solid 2px #051181;
+  display: inline-block;
+  transform: rotate(-45deg);
+  width: 10px;
+  height: 10px;
+  /* right: 50px;
+  bottom: 50px;
+  width: 50px;
+  height: 50px;
+  background-color: #eee ; */
+}
+
+#scroll_top::before {
+  content: '';
+  position: fixed;
+  right: 50px;
+  bottom: 50px;
+  width: 50px;
+  height: 50px;
+  background-color: #eee ;
+}
+
+/* q3が終わったら
+q4のcssはq4フォルダの中のcssファイルに記述してください
+ */
