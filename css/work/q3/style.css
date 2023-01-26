@@ -29,30 +29,34 @@
   font-size: 50px;
 }
 
-#scroll_top::after {
-  content: '';
-  position: fixed;
-  border-top: solid 2px #051181;
-  border-right: solid 2px #051181;
-  display: inline-block;
-  transform: rotate(-45deg);
-  width: 10px;
-  height: 10px;
-  /* right: 50px;
-  bottom: 50px;
-  width: 50px;
-  height: 50px;
-  background-color: #eee ; */
-}
-
-#scroll_top::before {
-  content: '';
+/* スクロールボタン */
+.scroll_top {
   position: fixed;
   right: 50px;
   bottom: 50px;
+  width: fit-content;
+  height: fit-content;
+}
+
+.scroll_top_btn {
+  position: relative;
   width: 50px;
   height: 50px;
   background-color: #eee ;
+}
+
+.scroll_top_btn::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -30%) rotate(-45deg);
+  border: 0;
+  border-top: solid 1px #000;
+  border-right: solid 1px #000;
+  display: inline-block;
+  width: 10px;
+  height: 10px;
 }
 
 /* q3が終わったら
