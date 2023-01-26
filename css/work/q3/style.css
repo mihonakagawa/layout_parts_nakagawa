@@ -1,10 +1,10 @@
 @charset "UTF-8";
 
-.hanabi {
+.firework_container {
   position: relative;
 }
 
-.hanabi::before {
+.firework_container::before {
   content: '';
   position: absolute;
   top: 50%;
@@ -15,12 +15,12 @@
   background-color: #fd951e;
 }
 
-.firewark_img {
+.firework_img {
   display: block;
   margin: 0 auto;
 }
 
-.firewark_text {
+.firework_text {
   position: absolute;
   top: 50%;
   left: 50%;
