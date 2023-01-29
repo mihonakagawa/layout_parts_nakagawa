@@ -1,1 +1,15 @@
 @charset "UTF-8";
+
+.animation_container {
+  width: 600px;
+  height: 400px;
+  overflow: hidden;
+}
+.animation {
+  width: 100%;
+  height: 100%;
+  transition-duration: .5s;
+}
+.animation:hover {
+  transform: scale(1.5);
+}
