@@ -1,5 +1,33 @@
 @charset "UTF-8";
 
+.table_width {
+  width: 100%;
+  table-layout: fixed;
+  text-align: center;
+  border: 1px solid #dedede;
+  border-collapse: collapse;
+  /* background-color: #2244aa; */
+}
+
+.table_row th,
+.table_row td {
+  border: 1px solid #dedede;
+  padding: 10px 0;
+}
+
+.table_row:nth-child(2n + 1) {
+  background-color: #ecf1f2;
+}
+
+.table_row th,
+.table_row:first-child {
+  background-color: #2244aa;
+  color: #fff;
+}
+
+.table_row:last-child {
+  border-top: 2px dashed #000;
+}
 
 /* q4が終わったら
 q5のcssはq5フォルダの中のcssファイルに記述してください
