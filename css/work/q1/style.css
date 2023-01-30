@@ -4,10 +4,10 @@
 .float_left {
   width: 400px;
   float: left;
+  margin-left: 60px;
 }
-.float_right {
-  width: 400px;
-  float: right;
+.float_left:first-child {
+  margin: 0;
 }
 .clearfix::after {
   content: "";
@@ -22,9 +22,10 @@
 .inline_block {
   display: inline-block;
   width: 400px;
-}
-.margin_left {
   margin-left: 60px;
+}
+.inline_block:first-child {
+  margin-left: 0;
 }
 
 /* 1-3 inline-calc */
