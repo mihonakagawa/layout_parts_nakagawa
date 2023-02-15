@@ -9,13 +9,14 @@
   /* background-color: #2244aa; */
 }
 
-.table_row th,
-.table_row td {
+/* 上だけでおk */
+.table_width th,
+.table_width td {
   border: 1px solid #dedede;
   padding: 10px 0;
 }
 
-.table_row:nth-child(2n + 1) {
+.table_width tbody tr:nth-child(2n + 1) {
   background-color: #ecf1f2;
 }
 
@@ -25,7 +26,7 @@
   color: #fff;
 }
 
-.table_row:last-child {
+.table_width tbody:last-child {
   border-top: 2px dashed #000;
 }
 
