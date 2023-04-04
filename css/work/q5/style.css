@@ -1,9 +1,11 @@
 @charset "UTF-8";
-
+/* q5 アニメーション */
+/* cursor: pointer;になっているか */
 .animation_container {
   width: 600px;
   height: 400px;
   overflow: hidden;
+  margin: 0 auto;
 }
 .animation {
   width: 100%;

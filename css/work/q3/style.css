@@ -30,6 +30,7 @@
   width: 50px;
   height: 50px;
   background-color: #eee;
+  /* 下記のように中身を中央揃えにしてもよい */
   /* display: flex;
   justify-content: center;
   align-items: center; */
