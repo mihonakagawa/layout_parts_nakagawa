@@ -1,12 +1,16 @@
 @charset "UTF-8";
 
 /* 1−1 float */
-.float_left {
+/* floatでの横並び */
+/* 連番（left, rightや番号など）でクラス名を付けるのは、後で要素を追加したり並べ替えた時に意味が破綻してしまう */
+/* 後で要素の順番が入れ替わったりした場合に編集し直す必要がないようにしましょう */
+/* クラス名は分けずに同じ名前にする、この場合なら最初だけ打ち消すようにすればOK（first-childを使う） */
+.float{
   width: 400px;
   float: left;
   margin-left: 60px;
 }
-.float_left:first-child {
+.float:first-child {
   margin: 0;
 }
 .clearfix::after {
@@ -16,6 +20,11 @@
 }
 
 /* 1-2 inline-block */
+/* インラインブロック要素を横並びにしたときにできる隙間を消すfont-size:0がついているか? */
+/* ※→なぜ隙間ができる？inline-blockを指定したときに、liに対しての後ろにある改行を半角スペースとして認識してしまうため、若干の隙間が出来てしまうのが原因 */
+/* inline-blockでの横並び（width固定） */
+/* widthが400で指定されているか */
+/* first-childでmarginを打ち消しているか */
 .font_zero {
   font-size: 0;
 }
@@ -29,6 +38,10 @@
 }
 
 /* 1-3 inline-calc */
+/* inline-block（width算出） */
+/* display: inline-block;で横並び出来ているか */
+/* widthにcalcが使えているか */
+/* margin-left: 25px;になっているか */
 .inline_calc {
   display: inline-block;
   width: calc((100% - 50px) / 3);
@@ -39,9 +52,12 @@
 }
 
 /* 1-4 flex */
+/* flexでの横並び */
 .flex_box {
   display: flex;
   justify-content: space-between;
+  /* gap: 60px; ←justify-contentがついていれば、あってもなくてもいい */
+  /* align-items: stretch; 高さが一番大きいものに合わせる記述 今回は特に指定していないのであってもなくてもいい */
 }
 .flex_width {
   width: 400px;

@@ -1,6 +1,8 @@
 @charset "UTF-8";
 
 /* 2-1 text-align */
+/* text-alignでの左右中央寄せ */
+/* ブロック内のテキストかインライン要素は、text-alignで中央寄せできる */
 .text_center {
   text-align: center;
 }
@@ -9,11 +11,16 @@
 }
 
 /* 2-2 margin */
+/* marginを利用した天地左右中央寄せ */
+/* margin: 0 autoになっているか */
+/* text-align: center;も指定できているか */
 .margin_auto {
   margin: 0 auto;
 }
 
 /* 2-3 flex */
+/* flexを利用した天地左右中央寄せ */
+/* 下記の通りになっているか */
 .flex_center {
   display: flex;
   justify-content: center;

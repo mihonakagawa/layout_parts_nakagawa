@@ -4,18 +4,6 @@
   position: relative;
 }
 
-/* pたぐで作る */
-/* .firework_container::before {
-  content: '';
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%,-50%);
-  width: 300px;
-  height: 200px;
-  background-color: #fd951e;
-} */
-
 .firework_img {
   display: block;
   margin: 0 auto;
@@ -31,34 +19,30 @@
   width: 300px;
   background-color: orange;
   line-height: 2;
+  text-align: center;
 }
 
-/* スクロールボタン */
+/* Topへスクロールするボタン */
 .scroll_top {
   position: fixed;
   right: 50px;
   bottom: 50px;
-  width: fit-content;
-  height: fit-content;
-}
-
-/* .scroll_top_btn {
-  position: relative;
   width: 50px;
   height: 50px;
-  background-color: #eee ;
-} */
+  background-color: #eee;
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+}
 
-.scroll_top_btn::after {
+.scroll_top::after {
   content: '';
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -25%) rotate(-45deg);
-  border: 0;
   border-top: solid 1px #000;
   border-right: solid 1px #000;
-  display: inline-block;
   width: 10px;
   height: 10px;
 }
